@@ -2,78 +2,74 @@
 
 สถานะงานกลางสำหรับ Business Owner และทีม AI
 
-## NOW — Phase 0
+## COMPLETED — Foundation
 
 ### T-001 ระบุ Customer Problems
-**Owner:** Customer Research AI
-**Goal:** ระบุปัญหาจริงที่เจ้าภาพเจอเมื่อจัดอาหารจำนวนมาก
-**Deliverable:** `CUSTOMER-PROBLEMS.md`
 **Status:** DONE — initial hypothesis map complete; awaiting customer evidence
 
 ### T-002 ขยาย Service Scope
-**Owner:** Operations AI
-**Goal:** แยกงานเป็น “ทำ / ไม่ทำ / ทำเมื่อมีเงื่อนไข” พร้อมความเสี่ยง
-**Deliverable:** อัปเดต `SERVICE-DEFINITION.md`
-**Status:** DONE — initial scope complete; 3 owner decisions remain
+**Status:** DONE — initial scope complete and owner input incorporated
 
 ### T-003 ระบุ Team Roles
-**Owner:** Operations AI
-**Goal:** เสนอหน้าที่หัวหน้าครัว สมาชิกทีม และผู้ประสานงาน
-**Deliverable:** `TEAM-ROLES.md`
-**Status:** DONE — role model complete; actual team mapping pending
+**Status:** DONE — role model complete; actual skill mapping pending
 
 ### T-004 สร้างรายการสมมติฐานธุรกิจ
-**Owner:** Business Strategy AI
-**Goal:** แปลงสิ่งที่ยังไม่รู้เป็น Hypothesis ที่สามารถตรวจสอบได้
-**Deliverable:** `ASSUMPTIONS.md`
 **Status:** DONE — prioritized assumption register complete
 
 ### T-005 เตรียม Customer Interview Guide
-**Owner:** Customer Research AI
-**Goal:** สร้างคำถามสั้นที่ใช้คุยกับเจ้าภาพ/ผู้จัดงานโดยไม่ชี้นำคำตอบ
-**Deliverable:** `research/CUSTOMER-INTERVIEW-GUIDE.md`
 **Status:** DONE
 
-## OWNER INPUT NEEDED
-
-### O-001 ยืนยันขอบเขตงานเก็บล้างหลังเสิร์ฟ
-อ้างอิง `SERVICE-DEFINITION.md` — DQ-001
-
-### O-002 กำหนดหลักการรับการเปลี่ยนเมนูหน้างาน
-อ้างอิง `SERVICE-DEFINITION.md` — DQ-002
-
-### O-003 อธิบายรูปแบบวัตถุดิบที่ทีมมักได้รับจริง
-อ้างอิง `SERVICE-DEFINITION.md` — DQ-003
-
-### O-004 ให้ข้อมูลทีมจริงเบื้องต้น
-ใช้เพื่อสร้าง Team Skill Matrix และ Operational Baseline
-
-## NEXT — Phase 1
-
 ### T-006 เก็บ Team Reality Baseline
-**Owner:** Business Lead + Owner
-**Deliverable:** `research/TEAM-BASELINE.md`
-**Status:** READY — waiting owner input
+**Deliverable:** `TEAM-BASELINE.md`
+**Status:** DONE — core facts recorded; skill details pending
 
-### T-007 เก็บ Historical Job Baseline
-**Owner:** Operations AI + Owner
-**Goal:** บันทึกงานย้อนหลัง 3–5 งานที่ทีมยังจำได้
-**Deliverable:** `research/HISTORICAL-JOBS.md`
-**Status:** READY — waiting owner/team input
+### T-007 สร้าง Workload Assessment Model v1
+**Owner:** Operations AI
+**Goal:** ประเมินความหนักของงานจากความซับซ้อนจริง ไม่ใช้จำนวนแขกเพียงอย่างเดียว
+**Deliverable:** `WORKLOAD-ASSESSMENT-MODEL.md`
+**Status:** DONE — operational hypothesis v1
 
-### T-008 Customer Interviews
+### T-008 สร้างแบบเก็บข้อมูลหลังงาน
+**Owner:** Operations AI
+**Deliverable:** `research/JOB-OBSERVATION-LOG.md`
+**Status:** DONE
+
+## NOW — Phase 1: Validate with Real Work
+
+### T-009 ใช้ Workload Model กับงานจริงถัดไป
+**Owner:** Kitchen Lead + Operations AI
+**Goal:** ประเมินงานก่อนเริ่ม และทบทวนหลังจบงาน
+**Input:** `WORKLOAD-ASSESSMENT-MODEL.md`
+**Output:** สำเนา Job Record จาก `research/JOB-OBSERVATION-LOG.md`
+**Status:** READY — รอการมีงานจริงครั้งถัดไป
+
+### T-010 สร้าง Team Skill Matrix
+**Owner:** Operations AI + Owner/Team
+**Goal:** ระบุความถนัดจริงของสมาชิก 4 คน เพื่อใช้จัดบทบาทและสำรองกำลัง
+**Deliverable:** `TEAM-SKILL-MATRIX.md`
+**Status:** READY — ต้องเก็บข้อมูลสมาชิก
+
+### T-011 Customer Interviews
 **Owner:** Customer Research AI + Owner/Team
-**Goal:** สัมภาษณ์ผู้เคยเป็นเจ้าภาพ/ผู้จัดงานและเก็บคำพูดจริง
+**Goal:** คุยกับผู้เคยเป็นเจ้าภาพ/ผู้จัดงานและเก็บคำพูดจริง
 **Input:** `research/CUSTOMER-INTERVIEW-GUIDE.md`
 **Status:** READY
 
-### T-009 วิเคราะห์ Customer Journey
+### T-012 วิเคราะห์ Customer Journey
 **Owner:** Customer Research AI
-**Status:** BLOCKED — ต้องมี evidence จาก T-008 หรือข้อมูลย้อนหลังที่เพียงพอ
+**Status:** BLOCKED — ต้องมี customer evidence
 
-### T-010 สร้าง Service Blueprint v1
+### T-013 สร้าง Service Blueprint v1
 **Owner:** Operations AI
-**Status:** BLOCKED — ต้องมี Customer Journey + Scope decisions
+**Status:** BLOCKED — ต้องมี Customer Journey และข้อมูลงานจริงเพิ่มเติม
+
+## VALIDATION GATE ก่อน Pricing
+
+ยังไม่เริ่มตั้งราคาจริงจนกว่าจะมีข้อมูลขั้นต่ำ:
+- ข้อมูล Job Observation อย่างน้อย 5 งาน หรือข้อมูลย้อนหลังที่เชื่อถือได้พอ
+- Skill Matrix ของทีม
+- ค่าแรง/ค่าเดินทางจริง
+- เริ่มเห็นว่าอะไรทำให้ทีม 4 คนต้องเพิ่มกำลัง
 
 ## LATER
 
@@ -82,6 +78,7 @@
 - Logo
 - Facebook Page
 - Service Packages
+- ทีมเสิร์ฟ/ล้างอุปกรณ์ครบวงจร
 - ระบบดิจิทัลรับจองงาน
 
 รายการ LATER ไม่ใช่งานเร่งด่วนในขณะนี้
