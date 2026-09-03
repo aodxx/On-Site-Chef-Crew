@@ -36,25 +36,26 @@
 **Deliverable:** `research/MARKET-LANDSCAPE.md`
 **Status:** DONE — strategic landscape v1 complete
 
-## NOW — Strategic Direction
-
-### T-010 ยืนยัน Positioning Direction
-**Owner:** Business Lead + Business Owner
-**Goal:** ตัดสินใจว่าจะเดินจาก Cooking Crew ไปสู่ Managed Kitchen Service หรือทิศอื่น
-**Input:** `research/MARKET-LANDSCAPE.md`
-**Status:** READY
-
 ### T-011 Competitor Pattern Scan — Phatthalung & Nearby
 **Owner:** Business Strategy AI
 **Goal:** สำรวจคู่แข่ง/ทางเลือกของลูกค้าแบบเจาะจงเรื่องบริการ ราคา ขั้นตอนจอง และจุดขาย
 **Deliverable:** `research/COMPETITOR-PATTERNS.md`
-**Status:** READY
+**Status:** DONE — local/nearby patterns and evidence-quality notes recorded
+
+## NOW — Strategic Direction
+
+### T-010 ยืนยัน Positioning Direction
+**Owner:** Business Lead + Business Owner
+**Goal:** ตัดสินใจว่าจะเดินจาก Cooking Crew ไปสู่ Managed On-Site Kitchen Crew หรือทิศอื่น
+**Input:** `research/MARKET-LANDSCAPE.md` + `research/COMPETITOR-PATTERNS.md`
+**Recommendation:** Managed On-Site Kitchen Crew โดยยังไม่แข่งขันเป็น Full Catering
+**Status:** OWNER DECISION NEEDED
 
 ### T-012 ออกแบบ Service Ladder v1
 **Owner:** Business Strategy + Operations AI
 **Goal:** สร้างระดับบริการ 2–3 ชั้นที่เริ่มจากสิ่งที่ทีมทำได้จริง และมีเส้นทางขยายโดยไม่กระโดดเป็น Catering เต็มรูปแบบ
 **Deliverable:** `SERVICE-LADDER.md`
-**Status:** BLOCKED — รอ T-010/T-011
+**Status:** READY AFTER T-010
 
 ### T-013 ออกแบบ Customer Brief / ขั้นตอนรับงาน
 **Owner:** Operations AI
@@ -65,7 +66,7 @@
 ### T-014 Pricing Logic
 **Owner:** Finance & Pricing AI
 **Goal:** สร้างตรรกะราคาให้เชื่อมกับขอบเขตบริการ ภาระงาน ระยะทาง และทีม
-**Status:** BLOCKED — รอ Service Ladder + Competitor Pattern Scan
+**Status:** BLOCKED — รอ Service Ladder
 
 ## PAUSED — เก็บเฉพาะเมื่อช่วยตัดสินใจ
 
